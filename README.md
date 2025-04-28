@@ -1,39 +1,31 @@
-🌟 Brightness Controller using Hand Gestures
-This project uses OpenCV and MediaPipe to adjust screen brightness based on the distance between your thumb and index finger. The brightness is adjusted in real-time using screen-brightness-control.
+Hand Gesture-Based Brightness Controller
+This project uses OpenCV, MediaPipe, and Screen Brightness Control to adjust your screen brightness by detecting the distance between your thumb and index finger in real time through your webcam.
 
-🚀 How It Works
-The webcam captures real-time video.
+Features
+Real-time hand tracking using your webcam.
+Dynamic control of screen brightness by moving your fingers.
+Smooth brightness adjustments without touching keyboard buttons.
+
+Technologies Used
+Python 3.8+
+OpenCV
+MediaPipe
+screen-brightness-control
+
+How to Clone and Run This Project in VS Code
+1. git clone https://github.com/your-username/hand-gesture-brightness-controller.git
+Open a terminal inside VS Code and run
+2. pip install opencv-python mediapipe screen-brightness-control
+3. python your_filename.py
+
+How It Works
+The webcam captures live video frames.
 MediaPipe detects hand landmarks.
-The distance between the thumb and index finger is calculated.
-The brightness is adjusted based on the distance (closer = lower brightness, farther = higher brightness).
-📦 Requirements
-Install the required libraries using:
+The distance between the thumb tip and index finger tip is measured.
+This distance is mapped to a brightness percentage (0% to 100%).
+The screen brightness is updated in real-time based on your hand gesture.
 
-bash
-Copy
-Edit
-pip install opencv-python-headless mediapipe screen-brightness-control
-🏃‍♂️ How to Run
-Open the terminal in your project folder.
-Run the script:
-bash
-Copy
-Edit
-python brightness_controller.py
-Adjust brightness using the distance between your thumb and index finger.
-Press 'q' to quit.
-🛠️ Code Explanation
-OpenCV – Captures video from the webcam.
-MediaPipe – Detects hand landmarks.
-Math – Calculates the Euclidean distance between the thumb and index finger.
-Screen Brightness Control – Adjusts the screen brightness based on the calculated distance.
-📸 Demo
-Hand Position	Brightness Level
-Thumb and Index Close	Low Brightness
-Thumb and Index Apart	High Brightness
-✨ Contributing
-Feel free to fork and contribute by creating a pull request.
-
-🏆 Author
-Prasath Raja
-📧 prasathraja2004@gmail.com
+Usage
+Bring your thumb and index finger close together(lower brightness).
+Move your thumb and index finger farther apart(increase brightness).
+Press 'q' to exit the application.
