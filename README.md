@@ -1,4 +1,5 @@
-Hand Gesture-Based Brightness Controller
+Hand Gesture-Based Brightness Controller:
+
 This project uses OpenCV, MediaPipe, and Screen Brightness Control to adjust your screen brightness by detecting the distance between your thumb and index finger in real time through your webcam.
 
 Features
